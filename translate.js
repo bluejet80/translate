@@ -1,7 +1,7 @@
 const fs = require('fs')
 const translate = require('translate')
 
-const phrases = fs.readFileSync("phrases","utf8")
+const phrases = fs.readFileSync(`${process.argv[0]}`,"utf8")
 
 const lines = phrases.split("\n");
 lines.pop()
